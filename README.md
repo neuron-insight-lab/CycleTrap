@@ -4,9 +4,30 @@ This is the code repository for our paper:  ```CycleTrap: Low-Entropy Loop Induc
 
 ## 🎓 Abstract
 
-<abstract>
+abstract abstract abstract
 
 ![overview](https://github.com/neuron-insight-lab/CycleTrap/raw/main/assets/overview.png)
+
+## Directory Structure
+
+```
+.
+├── assets/
+│  └── overview.png
+├── baseline/
+│  ├── LingoLoop.py
+│  ├── VerboseImage.py
+│  ├── VerboseVideo.py
+│  └── README.md  
+├── utils/
+│  ├── __init__.py
+│  ├── opt_utils.py
+│  └── vision_utils.py
+├── README.md
+├── env.yaml
+├── main.py
+└── main.sh
+```
 
 ## 🛠️ Installation 
 
@@ -19,14 +40,14 @@ conda activate CycleTrap
 
 ### 🔨 Model Preparation
 
-You can download the required MLLMs from the [huggingface](https://huggingface.co/)  (such as [Qwen2.5-VL-7B-Instrcut](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)) and fill in your model path in the corresponding position of the ```utils/vision_utils.py``` file.
+You can download the required MLLMs from the [huggingface](https://huggingface.co/)  (such as [Qwen2.5-VL-7B-Instrcut](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)) and fill in your model path in the corresponding position of the [utils/vision_utils.py](https://github.com/neuron-insight-lab/CycleTrap/blob/main/utils/vision_utils.py#L19) file.
 
 ### 📊 Dataset Preparation
 
-We selected four datasets: [MS-COCO](https://cocodataset.org/#download), [ImageNet](https://image-net.org/download-images.php), [TGIF](https://github.com/raingo/TGIF-Release) and [MSVD](https://github.com/jpthu17/EMCL), and chose 200 image and 100 video as the evaluation dataset. After downloading, fill in your dataset paths into the corresponding position of the ```utils/opt_utils.py``` file.
+We selected four datasets: [MS-COCO](https://cocodataset.org/#download), [ImageNet](https://image-net.org/download-images.php), [TGIF](https://github.com/raingo/TGIF-Release) and [MSVD](https://github.com/jpthu17/EMCL), and chose 200 image and 100 video as the evaluation dataset. After downloading, fill in your dataset paths into the corresponding position of the [utils/opt_utils.py](https://github.com/neuron-insight-lab/CycleTrap/blob/main/utils/opt_utils.py#L21) file.
 
 
-## 💡 Usage
+## 💡 Quick Start
 
 Run the following bash file to complete "Main Experiment" in our paper 
 
@@ -44,5 +65,5 @@ python main.py \
       --segment_len 5 \
       --max_new_tokens 1024 \
       --steps 300 \
-      --root_dir "save/CycleTrap" \
+      --root_dir "save/CycleTrap"
 ```
