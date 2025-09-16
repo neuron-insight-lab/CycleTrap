@@ -22,7 +22,7 @@ MODEL_PATHS = {
     'InstructBLIP': 'Salesforce/instructblip-vicuna-7b',
     'InstructBlipVideo': 'Salesforce/instructblip-vicuna-7b',
     'LLaVa-Next':'llava-hf/llava-v1.6-mistral-7b-hf',
-    'LLaVa-Next-Video': '# llava-hf/LLaVA-NeXT-Video-7B-hf'
+    'LLaVa-Next-Video': 'llava-hf/LLaVA-NeXT-Video-7B-hf'
 }
 
 

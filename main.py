@@ -199,7 +199,7 @@ def get_args():
 
     parser.add_argument("--sample_times", type=int, default=1, help='The number of inference during the evaluation period')
     parser.add_argument("--repetition_penalty", type=float, default=1.05, help='The repetition penalty parameter of the generation process')
-    parser.add_argument("--root_dir", type=str, default='save/CycleTrap/')
+    parser.add_argument("--root_dir", type=str, default='save/CycleTrap/', help='Result saving directory')
     parser.add_argument("--seed", type=int, default=2025, help='random seed')
     parser.add_argument("--device_id", type=int, default=1, help='The device id being measured')
     # parser.add_argument("--temperature", type=float, default=0.6, help='temperature parameter')
