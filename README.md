@@ -42,7 +42,7 @@ conda activate CycleTrap
 
 ### 🔨 Model Preparation
 
-You can download the required MLLMs from the [huggingface](https://huggingface.co/), such as [Qwen2.5-VL-7B-Instrcut](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct), [InternVL3-8B](), [InstructBLIP](https://huggingface.co/Salesforce/instructblip-vicuna-7b) ([-Video](https://huggingface.co/docs/transformers/v4.55.4/en/model_doc/instructblipvideo)) and [LLaVA-NeXT](https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf) ([-Video](https://huggingface.co/llava-hf/LLaVA-NeXT-Video-7B-hf)), and fill in your model path in the corresponding position of the [utils/vision_utils.py](https://github.com/neuron-insight-lab/CycleTrap/blob/main/utils/vision_utils.py#L19) file.
+You can download the required MLLMs from the [huggingface](https://huggingface.co/), such as [Qwen2.5-VL-7B-Instrcut](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct), [InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B), [InstructBLIP](https://huggingface.co/Salesforce/instructblip-vicuna-7b) ([-Video](https://huggingface.co/docs/transformers/v4.55.4/en/model_doc/instructblipvideo)) and [LLaVA-NeXT](https://huggingface.co/llava-hf/llava-v1.6-mistral-7b-hf) ([-Video](https://huggingface.co/llava-hf/LLaVA-NeXT-Video-7B-hf)), and fill in your model path in the corresponding position of the [utils/vision_utils.py](https://github.com/neuron-insight-lab/CycleTrap/blob/main/utils/vision_utils.py#L19) file.
 
 ### 📊 Dataset Preparation
 
